@@ -1,6 +1,6 @@
 # COMPANTHROFRAC Privacy Policy
 
-**Effective Date:** 2026-11-04
+**Effective Date:** 2026-11-13
 
 COMPANTHROFRAC ("we", "our", "the extension") is committed to your privacy (and its creator's). This Privacy Policy explains how we handle information when you use our Chrome Web Store extension.
 
@@ -38,4 +38,4 @@ COMPANTHROFRAC's use of information received from the ANTHROFRACTAL website & br
 
 ## Contact
 
-For questions about this Privacy Policy or COMPANTHROFRAC's privacy practices, contact [cetacean.amnesiac@buffer.fish](mailto:cetacean.amnesiac@buffer.fish).
+For questions about this Privacy Policy or COMPANTHROFRAC's privacy practices, contact [cetacean.amnesiac@gmail.com](mailto:cetacean.amnesiac@gmail.com).
