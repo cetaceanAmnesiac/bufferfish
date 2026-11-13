@@ -10,7 +10,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "vercel": "bunx vercel"
+    "vercel": "npm run pxx -- vercel",
+    "test:static": "npm run pxx -- --package sirv-cli sirv public -Dp 8268",
+    "pxx": "sh ./scripts/pxx.sh"
   },
   "dependencies": {
     "astro": "^7.4.5",

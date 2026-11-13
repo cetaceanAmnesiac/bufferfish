@@ -3,35 +3,81 @@ import Base from '../layouts/Base.astro';
 
 const title = 'buffer.fish';
 const description = 'personal website of cetaceanAmnesiac';
+const githubUrl = 'https://github.com/cetaceanAmnesiac';
 const email = 'cetacean.amnesiac@gmail.com';
-
+const emailHref = `mailto:${email}`;
+const chromeStoreUrl = 'CHROME_STORE_URL';
+const privacyPolicyHref = '/companthrofrac/privacy';
 ---
-
 <Base {title} {description}>
-  <h1 class="muted"style="font-size: 1.2rem;">cetaceanAmnesiac</h1>
+  <header>
+    <section class="band-inner">
+      <h1 class="fancy-logo fancy--lines">buffer.fish</h1>
+    </section>
+  </header>
 
-  <hr />
+  <main>
+    <section class="band-inner">
+      <!-- <iframe
+        class="uiua-embed"
+        src="https://www.uiua.org/embed?src=0_20_0-dev_1__dGVzdAo="
+        title="Uiua Interactive Pad"
+        allow="clipboard-write"
+      >
+      </iframe> -->
 
-  <h2>projects</h2>
-  <ul>
-    <li>
-      <a href="https://github.com/cetaceanAmnesiac/companthrofrac">
-        <code>COMPANTHROFRAC</code>
-      </a> :: a browser extension for <a href="https://anthrofractal.com">
-        ANTHROFRACTAL
-      </a> readers
-    </li>
-  </ul>
+      <!-- <h2>projects</h2> -->
+      <ul>
+        <li>
+          <p>
+            <code>buffer.fish</code>
+            :: personal site of cetaceanAmnesiac
+          </p>
+          <!-- <p>
+            <a
+              href="https://buffer.fish"
+              target="_blank"
+              rel="noopener noreferrer"
+            >want another?</a>
+          </p> -->
+        </li>
 
-  <h2>links</h2>
-  <ul>
-    <li><a href="https://github.com/cetaceanAmnesiac">github</a></li>
-    <li><a href={`mailto:${email}`}>{email}</a></li>
-  </ul>
+        <li>
+          <p>
+            <code>COMPANTHROFRAC</code>{' '}
+            :: a browser extension for readers of{' '}
+            <a href="https://anthrofractal.com">ANTHROFRACTAL</a>
+          </p>
+          <p>
+            <a
+              href="https://github.com/cetaceanAmnesiac/companthrofrac"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub</a>
+            <span style="padding-inline: 0.5rem;"> | </span>
+            <a
+              href={chromeStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >Chrome Web Store</a>
+            <span style="padding-inline: 0.5rem;"> | </span>
+            <a
+              href={privacyPolicyHref}
+              target="_blank"
+              rel="noopener noreferrer"
+            >Privacy Policy</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-  <hr />
-
-  <p class="muted" style="font-size: 0.8rem;">
-    <!-- <a href="/privacy" style="color: var(--muted);">privacy policy</a> -->
-  </p>
+  <footer class="footer">
+    <section class="band-inner">
+      <nav class="footer-menu">
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer">github</a>
+        <a href={emailHref} target="_blank" rel="noopener noreferrer">email</a>
+      </nav>
+    </section>
+  </footer>
 </Base>

@@ -1,0 +1,57 @@
+{
+  "folders": [
+    {
+      "path": "..",
+      "name": "buffer.fish",
+    },
+  ],
+
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "[csv][tsv]": {
+      "files.insertFinalNewline": false,
+    },
+
+    "prettier.requireConfig": true,
+    "prettier.configPath": "./.prettierrc.json5",
+
+    "editor.unicodeHighlight.allowedCharacters": {
+      "–": true,
+      "—": true,
+    },
+
+    "js/ts.tsdk.path": "node_modules/typescript/lib",
+    "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+
+    "files.associations": {
+      "*.schema.json": "json",
+      ".prettierrc.json5": "jsonc",
+    },
+
+    // "json.validate.trailingCommas": "ignore",
+    "json.schemas": [
+      {
+        "fileMatch": [
+          "*.code-workspace",
+          ".prettierrc.json5",
+        ],
+        "schema": {
+          "allowTrailingCommas": true,
+        },
+      },
+    ],
+  },
+
+  "extensions": {
+    "recommendations": [
+      "astro-build.astro-vscode",
+    ],
+  },
+}

@@ -1,0 +1,38 @@
+{
+  "arrowParens": "avoid",
+  "experimentalOperatorPosition": "end",
+  "experimentalTernaries": true,
+  "printWidth": 80,
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false,
+
+  "overrides": [
+    {
+      "files": [
+        ".prettierrc.json5",
+        "*.code-workspace",
+      ],
+      "options": {
+        "parser": "jsonc",
+        "printWidth": 0,
+        "trailingComma": "all",
+      },
+    },
+    {
+      "files": "*.schema.json",
+      "options": {
+        "parser": "json",
+        "printWidth": 0,
+        "trailingComma": "none",
+      },
+    },
+  ],
+
+  // TODO: https://prettier.io/blog/2018/11/07/1.15.0.html#whitespace-sensitive-formatting
+
+  // "$schema": "https://json.schemastore.org/prettierrc",
+  // "$schema": "./.vscode/prettierrc.schema.json",
+}

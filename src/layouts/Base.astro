@@ -2,9 +2,16 @@
 type Props = {
   title: string;
   description?: string;
+  stylesheetHref?: string | null;
 }
 
-const { title, description  } = Astro.props;
+const GLOBAL_STYLESHEET = '/styles/global.css';
+
+const {
+  title,
+  description,
+  stylesheetHref = GLOBAL_STYLESHEET,
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -16,7 +23,7 @@ const { title, description  } = Astro.props;
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/styles/global.css" />
+    {stylesheetHref && <link rel="stylesheet" href={stylesheetHref} />}
     <title>{title}</title>
   </head>
   <body>
